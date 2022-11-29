@@ -1,0 +1,9 @@
+plugin 'cocoapods-art', :sources => [
+  'complycube-mobilesdk-cocoapods-local',
+  'trunk'
+]
+target 'SampleApp' do
+	use_modular_headers!
+	pod 'Sentry'
+	pod 'ComplyCubeMobileSDK'
+end
