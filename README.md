@@ -25,14 +25,20 @@ The ComplyCube iOS SDK provides a set of easy to integrate screens to complete a
 * Xcode 13+
 
 ### CocoaPods
-Before using the ComplyCube SDK, install the cocoapods Artifactory plugin by running the following command in your terminal:
+1. Before using the ComplyCube SDK, install the cocoapods Artifactory plugin by running the following command in your terminal:
 
 ```bash
 gem install cocoapods-art
 ```
 
-In order to add the library, copy the `.netrc` file to your home directory.
-and add this to your `Podfile`.
+2. In order to add the library, copy the `.netrc` file to your home directory and setup the repository:
+
+```bash
+pod repo-art add complycube-mobilesdk-cocoapods-local "https://complycube.jfrog.io/artifactory/api/pods/complycube-mobilesdk-cocoapods-local"
+```
+
+
+3. add plugin repos and install the pod using your `Podfile`.
 ```ruby
 plugin 'cocoapods-art', :sources => [
   'complycube-mobilesdk-cocoapods-local',
