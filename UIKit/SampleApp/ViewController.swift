@@ -19,17 +19,23 @@ class ViewController: UIViewController {
     @IBAction func onboardClient(_ sender: Any) {
         let documentStage = DocumentStageBuilder()
             .setAllowedDocumentTypes(types: [ .passport,
-                                              .nationalIdentityCard()])
-            .useLiveCaptureOnly(enable: false)
+                                              .nationalIdentityCard(["GB", "FR"])]) // Customize the document nationality
+            .useLiveCaptureOnly(enable: false) // disable live capture only
             .build()
         
         let selfieStage = BiometricStageBuilder()
-            .setType(type: BiometricType.video)
+            .setType(type: BiometricType.video) // Setup Video selfie
+            .setEnableMLAssistant(enable: true) // Setup the ML assistant for the selfie stage
             .build()
+        
+        // Build colour scheme
+        let colorScheme = ComplyCubeColourScheme()
+        colorScheme.primaryButtonBgColor = .green
         let sdk = ComplyCubeMobileSDK.FlowBuilder()
             .withSDKToken("userTokenGoesHere")
             .withClientId("userIDGoesHere")
             .withStages([documentStage, selfieStage])
+            .withColorScheme(colorScheme)
             .start(fromVc: self)
     }
 }

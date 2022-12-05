@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024490BB447AAC8F2212EA4A /* Pods_ComplyCube_sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35F2AA8103B789DFD12B0EA /* Pods_ComplyCube_sample_App.framework */; };
+		08645DCE1FF5DBF9ECEEF126 /* Pods_ComplyCube_sample_App_ComplyCube_sample_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF55F9AA0242CB317084643 /* Pods_ComplyCube_sample_App_ComplyCube_sample_AppUITests.framework */; };
+		0A60449A6934F2DD4611C232 /* Pods_ComplyCube_sample_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DF2924D0F3481C116DB99F /* Pods_ComplyCube_sample_AppTests.framework */; };
+		FC3EAB8D2938FC36003C15E4 /* ComplyCube_sample_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAB8C2938FC36003C15E4 /* ComplyCube_sample_AppApp.swift */; };
+		FC3EAB8F2938FC36003C15E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAB8E2938FC36003C15E4 /* ContentView.swift */; };
+		FC3EAB9E2938FC39003C15E4 /* ComplyCube_sample_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAB9D2938FC39003C15E4 /* ComplyCube_sample_AppTests.swift */; };
+		FC3EABA82938FC39003C15E4 /* ComplyCube_sample_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EABA72938FC39003C15E4 /* ComplyCube_sample_AppUITests.swift */; };
+		FC3EABAA2938FC39003C15E4 /* ComplyCube_sample_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EABA92938FC39003C15E4 /* ComplyCube_sample_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC3EAB9A2938FC39003C15E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3EAB812938FC36003C15E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC3EAB882938FC36003C15E4;
+			remoteInfo = "ComplyCube sample App";
+		};
+		FC3EABA42938FC39003C15E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3EAB812938FC36003C15E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC3EAB882938FC36003C15E4;
+			remoteInfo = "ComplyCube sample App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C51281786ABD4F21F8C9779 /* Pods-ComplyCube sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCube sample App.release.xcconfig"; path = "Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App.release.xcconfig"; sourceTree = "<group>"; };
+		6C796646E31B6BF98433F157 /* Pods-ComplyCube sample AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCube sample AppTests.debug.xcconfig"; path = "Target Support Files/Pods-ComplyCube sample AppTests/Pods-ComplyCube sample AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		924B0A04EA30FF716B3E77B9 /* Pods-ComplyCube sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCube sample App.debug.xcconfig"; path = "Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App.debug.xcconfig"; sourceTree = "<group>"; };
+		93DF2924D0F3481C116DB99F /* Pods_ComplyCube_sample_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComplyCube_sample_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF55F9AA0242CB317084643 /* Pods_ComplyCube_sample_App_ComplyCube_sample_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComplyCube_sample_App_ComplyCube_sample_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E731B3F601967CA02D44844 /* Pods-ComplyCube sample App-ComplyCube sample AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCube sample App-ComplyCube sample AppUITests.release.xcconfig"; path = "Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD90945E9E3F91D238785C73 /* Pods-ComplyCube sample App-ComplyCube sample AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCube sample App-ComplyCube sample AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B35F2AA8103B789DFD12B0EA /* Pods_ComplyCube_sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComplyCube_sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1B0256BE3FC6F242EEF7E8 /* Pods-ComplyCube sample AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCube sample AppTests.release.xcconfig"; path = "Target Support Files/Pods-ComplyCube sample AppTests/Pods-ComplyCube sample AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC3EAB892938FC36003C15E4 /* ComplyCube sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ComplyCube sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3EAB8C2938FC36003C15E4 /* ComplyCube_sample_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplyCube_sample_AppApp.swift; sourceTree = "<group>"; };
+		FC3EAB8E2938FC36003C15E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC3EAB902938FC39003C15E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC3EAB932938FC39003C15E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC3EAB992938FC39003C15E4 /* ComplyCube sample AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ComplyCube sample AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3EAB9D2938FC39003C15E4 /* ComplyCube_sample_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplyCube_sample_AppTests.swift; sourceTree = "<group>"; };
+		FC3EABA32938FC39003C15E4 /* ComplyCube sample AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ComplyCube sample AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3EABA72938FC39003C15E4 /* ComplyCube_sample_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplyCube_sample_AppUITests.swift; sourceTree = "<group>"; };
+		FC3EABA92938FC39003C15E4 /* ComplyCube_sample_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplyCube_sample_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3EAB862938FC36003C15E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024490BB447AAC8F2212EA4A /* Pods_ComplyCube_sample_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3EAB962938FC39003C15E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A60449A6934F2DD4611C232 /* Pods_ComplyCube_sample_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3EABA02938FC39003C15E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08645DCE1FF5DBF9ECEEF126 /* Pods_ComplyCube_sample_App_ComplyCube_sample_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FA75F568656940F863302CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				924B0A04EA30FF716B3E77B9 /* Pods-ComplyCube sample App.debug.xcconfig */,
+				4C51281786ABD4F21F8C9779 /* Pods-ComplyCube sample App.release.xcconfig */,
+				AD90945E9E3F91D238785C73 /* Pods-ComplyCube sample App-ComplyCube sample AppUITests.debug.xcconfig */,
+				9E731B3F601967CA02D44844 /* Pods-ComplyCube sample App-ComplyCube sample AppUITests.release.xcconfig */,
+				6C796646E31B6BF98433F157 /* Pods-ComplyCube sample AppTests.debug.xcconfig */,
+				CA1B0256BE3FC6F242EEF7E8 /* Pods-ComplyCube sample AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3860F441C0E8069CA2922FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B35F2AA8103B789DFD12B0EA /* Pods_ComplyCube_sample_App.framework */,
+				9CF55F9AA0242CB317084643 /* Pods_ComplyCube_sample_App_ComplyCube_sample_AppUITests.framework */,
+				93DF2924D0F3481C116DB99F /* Pods_ComplyCube_sample_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC3EAB802938FC36003C15E4 = {
+			isa = PBXGroup;
+			children = (
+				FC3EAB8B2938FC36003C15E4 /* ComplyCube sample App */,
+				FC3EAB9C2938FC39003C15E4 /* ComplyCube sample AppTests */,
+				FC3EABA62938FC39003C15E4 /* ComplyCube sample AppUITests */,
+				FC3EAB8A2938FC36003C15E4 /* Products */,
+				8FA75F568656940F863302CD /* Pods */,
+				B3860F441C0E8069CA2922FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3EAB8A2938FC36003C15E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EAB892938FC36003C15E4 /* ComplyCube sample App.app */,
+				FC3EAB992938FC39003C15E4 /* ComplyCube sample AppTests.xctest */,
+				FC3EABA32938FC39003C15E4 /* ComplyCube sample AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3EAB8B2938FC36003C15E4 /* ComplyCube sample App */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EAB8C2938FC36003C15E4 /* ComplyCube_sample_AppApp.swift */,
+				FC3EAB8E2938FC36003C15E4 /* ContentView.swift */,
+				FC3EAB902938FC39003C15E4 /* Assets.xcassets */,
+				FC3EAB922938FC39003C15E4 /* Preview Content */,
+			);
+			path = "ComplyCube sample App";
+			sourceTree = "<group>";
+		};
+		FC3EAB922938FC39003C15E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EAB932938FC39003C15E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC3EAB9C2938FC39003C15E4 /* ComplyCube sample AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EAB9D2938FC39003C15E4 /* ComplyCube_sample_AppTests.swift */,
+			);
+			path = "ComplyCube sample AppTests";
+			sourceTree = "<group>";
+		};
+		FC3EABA62938FC39003C15E4 /* ComplyCube sample AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EABA72938FC39003C15E4 /* ComplyCube_sample_AppUITests.swift */,
+				FC3EABA92938FC39003C15E4 /* ComplyCube_sample_AppUITestsLaunchTests.swift */,
+			);
+			path = "ComplyCube sample AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC3EAB882938FC36003C15E4 /* ComplyCube sample App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3EABAD2938FC39003C15E4 /* Build configuration list for PBXNativeTarget "ComplyCube sample App" */;
+			buildPhases = (
+				5EADBA0905F7A8E63E5F1907 /* [CP] Check Pods Manifest.lock */,
+				FC3EAB852938FC36003C15E4 /* Sources */,
+				FC3EAB862938FC36003C15E4 /* Frameworks */,
+				FC3EAB872938FC36003C15E4 /* Resources */,
+				785346E694A229A8C0798DD8 /* [CP] Embed Pods Frameworks */,
+				FBCEE96D7C8622DE136BFEA1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ComplyCube sample App";
+			productName = "ComplyCube sample App";
+			productReference = FC3EAB892938FC36003C15E4 /* ComplyCube sample App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC3EAB982938FC39003C15E4 /* ComplyCube sample AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3EABB02938FC39003C15E4 /* Build configuration list for PBXNativeTarget "ComplyCube sample AppTests" */;
+			buildPhases = (
+				40ABDAD2611578F2F48860F4 /* [CP] Check Pods Manifest.lock */,
+				FC3EAB952938FC39003C15E4 /* Sources */,
+				FC3EAB962938FC39003C15E4 /* Frameworks */,
+				FC3EAB972938FC39003C15E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3EAB9B2938FC39003C15E4 /* PBXTargetDependency */,
+			);
+			name = "ComplyCube sample AppTests";
+			productName = "ComplyCube sample AppTests";
+			productReference = FC3EAB992938FC39003C15E4 /* ComplyCube sample AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC3EABA22938FC39003C15E4 /* ComplyCube sample AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3EABB32938FC39003C15E4 /* Build configuration list for PBXNativeTarget "ComplyCube sample AppUITests" */;
+			buildPhases = (
+				D3E0F4712C3EEC92902E9375 /* [CP] Check Pods Manifest.lock */,
+				FC3EAB9F2938FC39003C15E4 /* Sources */,
+				FC3EABA02938FC39003C15E4 /* Frameworks */,
+				FC3EABA12938FC39003C15E4 /* Resources */,
+				95164678EAA20933365BE731 /* [CP] Embed Pods Frameworks */,
+				3F0CD288637AAADA5E481C76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3EABA52938FC39003C15E4 /* PBXTargetDependency */,
+			);
+			name = "ComplyCube sample AppUITests";
+			productName = "ComplyCube sample AppUITests";
+			productReference = FC3EABA32938FC39003C15E4 /* ComplyCube sample AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3EAB812938FC36003C15E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FC3EAB882938FC36003C15E4 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FC3EAB982938FC39003C15E4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FC3EAB882938FC36003C15E4;
+					};
+					FC3EABA22938FC39003C15E4 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FC3EAB882938FC36003C15E4;
+					};
+				};
+			};
+			buildConfigurationList = FC3EAB842938FC36003C15E4 /* Build configuration list for PBXProject "ComplyCube sample App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC3EAB802938FC36003C15E4;
+			productRefGroup = FC3EAB8A2938FC36003C15E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3EAB882938FC36003C15E4 /* ComplyCube sample App */,
+				FC3EAB982938FC39003C15E4 /* ComplyCube sample AppTests */,
+				FC3EABA22938FC39003C15E4 /* ComplyCube sample AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC3EAB872938FC36003C15E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3EAB972938FC39003C15E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3EABA12938FC39003C15E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F0CD288637AAADA5E481C76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40ABDAD2611578F2F48860F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComplyCube sample AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EADBA0905F7A8E63E5F1907 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComplyCube sample App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		785346E694A229A8C0798DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95164678EAA20933365BE731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App-ComplyCube sample AppUITests/Pods-ComplyCube sample App-ComplyCube sample AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E0F4712C3EEC92902E9375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComplyCube sample App-ComplyCube sample AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBCEE96D7C8622DE136BFEA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComplyCube sample App/Pods-ComplyCube sample App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3EAB852938FC36003C15E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3EAB8F2938FC36003C15E4 /* ContentView.swift in Sources */,
+				FC3EAB8D2938FC36003C15E4 /* ComplyCube_sample_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3EAB952938FC39003C15E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3EAB9E2938FC39003C15E4 /* ComplyCube_sample_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3EAB9F2938FC39003C15E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3EABA82938FC39003C15E4 /* ComplyCube_sample_AppUITests.swift in Sources */,
+				FC3EABAA2938FC39003C15E4 /* ComplyCube_sample_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC3EAB9B2938FC39003C15E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC3EAB882938FC36003C15E4 /* ComplyCube sample App */;
+			targetProxy = FC3EAB9A2938FC39003C15E4 /* PBXContainerItemProxy */;
+		};
+		FC3EABA52938FC39003C15E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC3EAB882938FC36003C15E4 /* ComplyCube sample App */;
+			targetProxy = FC3EABA42938FC39003C15E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC3EABAB2938FC39003C15E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC3EABAC2938FC39003C15E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC3EABAE2938FC39003C15E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924B0A04EA30FF716B3E77B9 /* Pods-ComplyCube sample App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComplyCube sample App/Preview Content\"";
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.didou.ComplyCube-sample-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC3EABAF2938FC39003C15E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C51281786ABD4F21F8C9779 /* Pods-ComplyCube sample App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComplyCube sample App/Preview Content\"";
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.didou.ComplyCube-sample-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC3EABB12938FC39003C15E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C796646E31B6BF98433F157 /* Pods-ComplyCube sample AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.didou.ComplyCube-sample-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComplyCube sample App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComplyCube sample App";
+			};
+			name = Debug;
+		};
+		FC3EABB22938FC39003C15E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA1B0256BE3FC6F242EEF7E8 /* Pods-ComplyCube sample AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.didou.ComplyCube-sample-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComplyCube sample App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComplyCube sample App";
+			};
+			name = Release;
+		};
+		FC3EABB42938FC39003C15E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD90945E9E3F91D238785C73 /* Pods-ComplyCube sample App-ComplyCube sample AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.didou.ComplyCube-sample-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ComplyCube sample App";
+			};
+			name = Debug;
+		};
+		FC3EABB52938FC39003C15E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E731B3F601967CA02D44844 /* Pods-ComplyCube sample App-ComplyCube sample AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.didou.ComplyCube-sample-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ComplyCube sample App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3EAB842938FC36003C15E4 /* Build configuration list for PBXProject "ComplyCube sample App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3EABAB2938FC39003C15E4 /* Debug */,
+				FC3EABAC2938FC39003C15E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3EABAD2938FC39003C15E4 /* Build configuration list for PBXNativeTarget "ComplyCube sample App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3EABAE2938FC39003C15E4 /* Debug */,
+				FC3EABAF2938FC39003C15E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3EABB02938FC39003C15E4 /* Build configuration list for PBXNativeTarget "ComplyCube sample AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3EABB12938FC39003C15E4 /* Debug */,
+				FC3EABB22938FC39003C15E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3EABB32938FC39003C15E4 /* Build configuration list for PBXNativeTarget "ComplyCube sample AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3EABB42938FC39003C15E4 /* Debug */,
+				FC3EABB52938FC39003C15E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3EAB812938FC36003C15E4 /* Project object */;
+}
