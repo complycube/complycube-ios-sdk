@@ -1,17 +1,17 @@
 //
-//  ObjectiveCUITestsLaunchTests.m
-//  ObjectiveCUITests
+//  ComplyCubeCUITestsLaunchTests.m
+//  ComplyCubeCUITests
 //
 //  Created by Kenshin Vag on 5/12/2022.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ObjectiveCUITestsLaunchTests : XCTestCase
+@interface ComplyCubeCUITestsLaunchTests : XCTestCase
 
 @end
 
-@implementation ObjectiveCUITestsLaunchTests
+@implementation ComplyCubeCUITestsLaunchTests
 
 + (BOOL)runsForEachTargetApplicationUIConfiguration {
     return YES;

@@ -1,17 +1,17 @@
 //
-//  ObjectiveCUITests.m
-//  ObjectiveCUITests
+//  ComplyCubeCUITests.m
+//  ComplyCubeCUITests
 //
 //  Created by Kenshin Vag on 5/12/2022.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ObjectiveCUITests : XCTestCase
+@interface ComplyCubeCUITests : XCTestCase
 
 @end
 
-@implementation ObjectiveCUITests
+@implementation ComplyCubeCUITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

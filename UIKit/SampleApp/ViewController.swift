@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         // Build colour scheme
         let colorScheme = ComplyCubeColourScheme()
         colorScheme.primaryButtonBgColor = .green
+        colorScheme.headerTitle = .red
         let sdk = ComplyCubeMobileSDK.FlowBuilder()
             .withSDKToken("userTokenGoesHere")
             .withClientId("userIDGoesHere")

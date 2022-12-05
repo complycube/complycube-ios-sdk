@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CD51053DF26CABD6E27C98D /* libPods-ComplyCubeC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAE4587478A0E7C2B2C9ADE /* libPods-ComplyCubeC.a */; };
+		2FEE8FDFC6608A0F9D40A7B8 /* libPods-ComplyCubeC-ComplyCubeCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F235E7BFA341FF71A4C20E6 /* libPods-ComplyCubeC-ComplyCubeCUITests.a */; };
+		36DD1C1ABFCD1D40DCFC38DD /* libPods-ComplyCubeCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72EE5E00DD025484A8E158E /* libPods-ComplyCubeCTests.a */; };
+		FC688E26293E2743004463EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E25293E2743004463EE /* AppDelegate.m */; };
+		FC688E29293E2743004463EE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E28293E2743004463EE /* SceneDelegate.m */; };
+		FC688E2C293E2743004463EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E2B293E2743004463EE /* ViewController.m */; };
+		FC688E2F293E2743004463EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC688E2D293E2743004463EE /* Main.storyboard */; };
+		FC688E34293E2746004463EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC688E32293E2746004463EE /* LaunchScreen.storyboard */; };
+		FC688E37293E2746004463EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E36293E2746004463EE /* main.m */; };
+		FC688E41293E2746004463EE /* ComplyCubeCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E40293E2746004463EE /* ComplyCubeCTests.m */; };
+		FC688E4B293E2746004463EE /* ComplyCubeCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E4A293E2746004463EE /* ComplyCubeCUITests.m */; };
+		FC688E4D293E2746004463EE /* ComplyCubeCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E4C293E2746004463EE /* ComplyCubeCUITestsLaunchTests.m */; };
+		FC688E5B293E3275004463EE /* ComplyCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC688E5A293E3275004463EE /* ComplyCube.swift */; };
+		FC688E5E293E36E2004463EE /* ComplyCube.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688E5D293E36E2004463EE /* ComplyCube.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC688E3D293E2746004463EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC688E19293E2743004463EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC688E20293E2743004463EE;
+			remoteInfo = ComplyCubeC;
+		};
+		FC688E47293E2746004463EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC688E19293E2743004463EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC688E20293E2743004463EE;
+			remoteInfo = ComplyCubeC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F235E7BFA341FF71A4C20E6 /* libPods-ComplyCubeC-ComplyCubeCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComplyCubeC-ComplyCubeCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		236D53E3DD93F6E44D962168 /* Pods-ComplyCubeC-ComplyCubeCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCubeC-ComplyCubeCUITests.debug.xcconfig"; path = "Target Support Files/Pods-ComplyCubeC-ComplyCubeCUITests/Pods-ComplyCubeC-ComplyCubeCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DAE4587478A0E7C2B2C9ADE /* libPods-ComplyCubeC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComplyCubeC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D59EBCD322E3D0C72E70DB /* Pods-ComplyCubeC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCubeC.debug.xcconfig"; path = "Target Support Files/Pods-ComplyCubeC/Pods-ComplyCubeC.debug.xcconfig"; sourceTree = "<group>"; };
+		9E2C3FC795773A74D4A8A34C /* Pods-ComplyCubeC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCubeC.release.xcconfig"; path = "Target Support Files/Pods-ComplyCubeC/Pods-ComplyCubeC.release.xcconfig"; sourceTree = "<group>"; };
+		BBBDAC3AB0BA04F5CA206C22 /* Pods-ComplyCubeCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCubeCTests.release.xcconfig"; path = "Target Support Files/Pods-ComplyCubeCTests/Pods-ComplyCubeCTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA0EE6DA952C76D3CBFE5037 /* Pods-ComplyCubeCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCubeCTests.debug.xcconfig"; path = "Target Support Files/Pods-ComplyCubeCTests/Pods-ComplyCubeCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D72EE5E00DD025484A8E158E /* libPods-ComplyCubeCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComplyCubeCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC87D023D1B960BC4FB97D3 /* Pods-ComplyCubeC-ComplyCubeCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComplyCubeC-ComplyCubeCUITests.release.xcconfig"; path = "Target Support Files/Pods-ComplyCubeC-ComplyCubeCUITests/Pods-ComplyCubeC-ComplyCubeCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC688E21293E2743004463EE /* ComplyCubeC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComplyCubeC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC688E24293E2743004463EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC688E25293E2743004463EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC688E27293E2743004463EE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FC688E28293E2743004463EE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FC688E2A293E2743004463EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC688E2B293E2743004463EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC688E2E293E2743004463EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC688E30293E2746004463EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC688E33293E2746004463EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC688E35293E2746004463EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC688E36293E2746004463EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC688E3C293E2746004463EE /* ComplyCubeCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComplyCubeCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC688E40293E2746004463EE /* ComplyCubeCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplyCubeCTests.m; sourceTree = "<group>"; };
+		FC688E46293E2746004463EE /* ComplyCubeCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComplyCubeCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC688E4A293E2746004463EE /* ComplyCubeCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplyCubeCUITests.m; sourceTree = "<group>"; };
+		FC688E4C293E2746004463EE /* ComplyCubeCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplyCubeCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FC688E59293E3274004463EE /* ComplyCubeC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComplyCubeC-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC688E5A293E3275004463EE /* ComplyCube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplyCube.swift; sourceTree = "<group>"; };
+		FC688E5C293E3616004463EE /* ComplyCube-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComplyCube-Swift.h"; sourceTree = "<group>"; };
+		FC688E5D293E36E2004463EE /* ComplyCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplyCube.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC688E1E293E2743004463EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD51053DF26CABD6E27C98D /* libPods-ComplyCubeC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC688E39293E2746004463EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DD1C1ABFCD1D40DCFC38DD /* libPods-ComplyCubeCTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC688E43293E2746004463EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEE8FDFC6608A0F9D40A7B8 /* libPods-ComplyCubeC-ComplyCubeCUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36036627E7C5EC0330B1B24D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53D59EBCD322E3D0C72E70DB /* Pods-ComplyCubeC.debug.xcconfig */,
+				9E2C3FC795773A74D4A8A34C /* Pods-ComplyCubeC.release.xcconfig */,
+				236D53E3DD93F6E44D962168 /* Pods-ComplyCubeC-ComplyCubeCUITests.debug.xcconfig */,
+				FBC87D023D1B960BC4FB97D3 /* Pods-ComplyCubeC-ComplyCubeCUITests.release.xcconfig */,
+				CA0EE6DA952C76D3CBFE5037 /* Pods-ComplyCubeCTests.debug.xcconfig */,
+				BBBDAC3AB0BA04F5CA206C22 /* Pods-ComplyCubeCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9A3120B22F8BA5697DBAA8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE4587478A0E7C2B2C9ADE /* libPods-ComplyCubeC.a */,
+				1F235E7BFA341FF71A4C20E6 /* libPods-ComplyCubeC-ComplyCubeCUITests.a */,
+				D72EE5E00DD025484A8E158E /* libPods-ComplyCubeCTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC688E18293E2743004463EE = {
+			isa = PBXGroup;
+			children = (
+				FC688E23293E2743004463EE /* ComplyCubeC */,
+				FC688E3F293E2746004463EE /* ComplyCubeCTests */,
+				FC688E49293E2746004463EE /* ComplyCubeCUITests */,
+				FC688E22293E2743004463EE /* Products */,
+				36036627E7C5EC0330B1B24D /* Pods */,
+				D9A3120B22F8BA5697DBAA8B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC688E22293E2743004463EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC688E21293E2743004463EE /* ComplyCubeC.app */,
+				FC688E3C293E2746004463EE /* ComplyCubeCTests.xctest */,
+				FC688E46293E2746004463EE /* ComplyCubeCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC688E23293E2743004463EE /* ComplyCubeC */ = {
+			isa = PBXGroup;
+			children = (
+				FC688E24293E2743004463EE /* AppDelegate.h */,
+				FC688E25293E2743004463EE /* AppDelegate.m */,
+				FC688E27293E2743004463EE /* SceneDelegate.h */,
+				FC688E28293E2743004463EE /* SceneDelegate.m */,
+				FC688E2A293E2743004463EE /* ViewController.h */,
+				FC688E2B293E2743004463EE /* ViewController.m */,
+				FC688E2D293E2743004463EE /* Main.storyboard */,
+				FC688E30293E2746004463EE /* Assets.xcassets */,
+				FC688E32293E2746004463EE /* LaunchScreen.storyboard */,
+				FC688E35293E2746004463EE /* Info.plist */,
+				FC688E36293E2746004463EE /* main.m */,
+				FC688E5A293E3275004463EE /* ComplyCube.swift */,
+				FC688E59293E3274004463EE /* ComplyCubeC-Bridging-Header.h */,
+				FC688E5C293E3616004463EE /* ComplyCube-Swift.h */,
+				FC688E5D293E36E2004463EE /* ComplyCube.m */,
+			);
+			path = ComplyCubeC;
+			sourceTree = "<group>";
+		};
+		FC688E3F293E2746004463EE /* ComplyCubeCTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC688E40293E2746004463EE /* ComplyCubeCTests.m */,
+			);
+			path = ComplyCubeCTests;
+			sourceTree = "<group>";
+		};
+		FC688E49293E2746004463EE /* ComplyCubeCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC688E4A293E2746004463EE /* ComplyCubeCUITests.m */,
+				FC688E4C293E2746004463EE /* ComplyCubeCUITestsLaunchTests.m */,
+			);
+			path = ComplyCubeCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC688E20293E2743004463EE /* ComplyCubeC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC688E50293E2746004463EE /* Build configuration list for PBXNativeTarget "ComplyCubeC" */;
+			buildPhases = (
+				A40F548F569936554B3A454C /* [CP] Check Pods Manifest.lock */,
+				FC688E1D293E2743004463EE /* Sources */,
+				FC688E1E293E2743004463EE /* Frameworks */,
+				FC688E1F293E2743004463EE /* Resources */,
+				65DA0F5C810AD0C94BD76355 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComplyCubeC;
+			productName = ComplyCubeC;
+			productReference = FC688E21293E2743004463EE /* ComplyCubeC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC688E3B293E2746004463EE /* ComplyCubeCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC688E53293E2746004463EE /* Build configuration list for PBXNativeTarget "ComplyCubeCTests" */;
+			buildPhases = (
+				6E1A0BCFC38559D4DF337CB5 /* [CP] Check Pods Manifest.lock */,
+				FC688E38293E2746004463EE /* Sources */,
+				FC688E39293E2746004463EE /* Frameworks */,
+				FC688E3A293E2746004463EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC688E3E293E2746004463EE /* PBXTargetDependency */,
+			);
+			name = ComplyCubeCTests;
+			productName = ComplyCubeCTests;
+			productReference = FC688E3C293E2746004463EE /* ComplyCubeCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC688E45293E2746004463EE /* ComplyCubeCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC688E56293E2746004463EE /* Build configuration list for PBXNativeTarget "ComplyCubeCUITests" */;
+			buildPhases = (
+				658087A41A1DF9E34040A229 /* [CP] Check Pods Manifest.lock */,
+				FC688E42293E2746004463EE /* Sources */,
+				FC688E43293E2746004463EE /* Frameworks */,
+				FC688E44293E2746004463EE /* Resources */,
+				A0DB2EC44994C0CA8C8926D8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC688E48293E2746004463EE /* PBXTargetDependency */,
+			);
+			name = ComplyCubeCUITests;
+			productName = ComplyCubeCUITests;
+			productReference = FC688E46293E2746004463EE /* ComplyCubeCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC688E19293E2743004463EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FC688E20293E2743004463EE = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					FC688E3B293E2746004463EE = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FC688E20293E2743004463EE;
+					};
+					FC688E45293E2746004463EE = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FC688E20293E2743004463EE;
+					};
+				};
+			};
+			buildConfigurationList = FC688E1C293E2743004463EE /* Build configuration list for PBXProject "ComplyCubeC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC688E18293E2743004463EE;
+			productRefGroup = FC688E22293E2743004463EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC688E20293E2743004463EE /* ComplyCubeC */,
+				FC688E3B293E2746004463EE /* ComplyCubeCTests */,
+				FC688E45293E2746004463EE /* ComplyCubeCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC688E1F293E2743004463EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC688E34293E2746004463EE /* LaunchScreen.storyboard in Resources */,
+				FC688E2F293E2743004463EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC688E3A293E2746004463EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC688E44293E2746004463EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		658087A41A1DF9E34040A229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComplyCubeC-ComplyCubeCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65DA0F5C810AD0C94BD76355 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCubeC/Pods-ComplyCubeC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCubeC/Pods-ComplyCubeC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComplyCubeC/Pods-ComplyCubeC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1A0BCFC38559D4DF337CB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComplyCubeCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DB2EC44994C0CA8C8926D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCubeC-ComplyCubeCUITests/Pods-ComplyCubeC-ComplyCubeCUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComplyCubeC-ComplyCubeCUITests/Pods-ComplyCubeC-ComplyCubeCUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComplyCubeC-ComplyCubeCUITests/Pods-ComplyCubeC-ComplyCubeCUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A40F548F569936554B3A454C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComplyCubeC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC688E1D293E2743004463EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC688E2C293E2743004463EE /* ViewController.m in Sources */,
+				FC688E26293E2743004463EE /* AppDelegate.m in Sources */,
+				FC688E5E293E36E2004463EE /* ComplyCube.m in Sources */,
+				FC688E37293E2746004463EE /* main.m in Sources */,
+				FC688E29293E2743004463EE /* SceneDelegate.m in Sources */,
+				FC688E5B293E3275004463EE /* ComplyCube.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC688E38293E2746004463EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC688E41293E2746004463EE /* ComplyCubeCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC688E42293E2746004463EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC688E4B293E2746004463EE /* ComplyCubeCUITests.m in Sources */,
+				FC688E4D293E2746004463EE /* ComplyCubeCUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC688E3E293E2746004463EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC688E20293E2743004463EE /* ComplyCubeC */;
+			targetProxy = FC688E3D293E2746004463EE /* PBXContainerItemProxy */;
+		};
+		FC688E48293E2746004463EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC688E20293E2743004463EE /* ComplyCubeC */;
+			targetProxy = FC688E47293E2746004463EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC688E2D293E2743004463EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC688E2E293E2743004463EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC688E32293E2746004463EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC688E33293E2746004463EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC688E4E293E2746004463EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC688E4F293E2746004463EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC688E51293E2746004463EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D59EBCD322E3D0C72E70DB /* Pods-ComplyCubeC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComplyCubeC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didou.ComplyCubeC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ComplyCubeC/ComplyCubeC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC688E52293E2746004463EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2C3FC795773A74D4A8A34C /* Pods-ComplyCubeC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComplyCubeC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didou.ComplyCubeC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ComplyCubeC/ComplyCubeC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC688E54293E2746004463EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0EE6DA952C76D3CBFE5037 /* Pods-ComplyCubeCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didou.ComplyCubeCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComplyCubeC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComplyCubeC";
+			};
+			name = Debug;
+		};
+		FC688E55293E2746004463EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBDAC3AB0BA04F5CA206C22 /* Pods-ComplyCubeCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didou.ComplyCubeCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComplyCubeC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ComplyCubeC";
+			};
+			name = Release;
+		};
+		FC688E57293E2746004463EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236D53E3DD93F6E44D962168 /* Pods-ComplyCubeC-ComplyCubeCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didou.ComplyCubeCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComplyCubeC;
+			};
+			name = Debug;
+		};
+		FC688E58293E2746004463EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC87D023D1B960BC4FB97D3 /* Pods-ComplyCubeC-ComplyCubeCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J578FXQJXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didou.ComplyCubeCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ComplyCubeC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC688E1C293E2743004463EE /* Build configuration list for PBXProject "ComplyCubeC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC688E4E293E2746004463EE /* Debug */,
+				FC688E4F293E2746004463EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC688E50293E2746004463EE /* Build configuration list for PBXNativeTarget "ComplyCubeC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC688E51293E2746004463EE /* Debug */,
+				FC688E52293E2746004463EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC688E53293E2746004463EE /* Build configuration list for PBXNativeTarget "ComplyCubeCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC688E54293E2746004463EE /* Debug */,
+				FC688E55293E2746004463EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC688E56293E2746004463EE /* Build configuration list for PBXNativeTarget "ComplyCubeCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC688E57293E2746004463EE /* Debug */,
+				FC688E58293E2746004463EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC688E19293E2743004463EE /* Project object */;
+}
