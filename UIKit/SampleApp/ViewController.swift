@@ -8,8 +8,6 @@ import ComplyCubeMobileSDK
 
 
 class ViewController: UIViewController {
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +31,7 @@ class ViewController: UIViewController {
         colorScheme.primaryButtonBgColor = .green
         colorScheme.headerTitle = .red
         let sdk = ComplyCubeMobileSDK.FlowBuilder()
-            .withSDKToken("userTokenGoesHere")
-            .withClientId("userIDGoesHere")
+            .withSDKToken("SDK_TOKEN")
             .withStages([documentStage, selfieStage])
             .withColorScheme(colorScheme)
             .start(fromVc: self)

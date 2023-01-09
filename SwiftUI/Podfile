@@ -1,25 +1,23 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
 plugin 'cocoapods-art', :sources => [
-  'complycube-mobilesdk-cocoapods-local',
+  'cc-cocoapods-release-local',
   'trunk'
 ]
-platform :ios, '12.4'
 
+platform :ios, '11.5'
 
-target 'ComplyCubeC' do
+target 'ComplyCube sample App' do
   # Comment the next line if you don't want to use dynamic frameworks
-use_modular_headers!
-  # Pods for ObjectiveC
-  pod 'ComplyCubeMobileSDK'
+  use_frameworks!
 
-  target 'ComplyCubeCTests' do
+  # Pods for ComplyCube sample App
+  pod 'ComplyCube'
+  target 'ComplyCube sample AppTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'ComplyCubeCUITests' do
+  target 'ComplyCube sample AppUITests' do
     # Pods for testing
   end
 

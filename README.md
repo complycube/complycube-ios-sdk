@@ -1,15 +1,6 @@
 # ComplyCube iOS SDK Sample Application
 iOS Sample App using the ComplyCube SDK Sample Application
 
-## Table of contents
-
-* [Overview](#overview)
-* [Installation](#installation)
-* [Getting started](#getting-started)
-* [Handling callbacks](#handling-callbacks)
-* [Customising Flow](#customising-flow)
-* [Handling Errors](#handling-errors)
-
 ## Overview
 The ComplyCube iOS SDK provides a set of easy to integrate screens to complete a custom identity verification flow. The SDK provides you with the abiliity to;
 
@@ -31,25 +22,23 @@ The ComplyCube iOS SDK provides a set of easy to integrate screens to complete a
 gem install cocoapods-art
 ```
 
-2. In order to add the library, copy the `.netrc` file to your home directory and setup the repository:
+2. In order to add the library, copy your respository credentials into a `.netrc` file to your home directory and setup the repository:
 
 ```bash
-pod repo-art add complycube-mobilesdk-cocoapods-local "https://complycube.jfrog.io/artifactory/api/pods/complycube-mobilesdk-cocoapods-local"
+pod repo-art add cc-cocoapods-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-local"
 ```
 
 
 3. add plugin repos and install the pod using your `Podfile`.
 ```ruby
 plugin 'cocoapods-art', :sources => [
-  'complycube-mobilesdk-cocoapods-local',
-  'trunk'
+  'cc-cocoapods-release-local'
 ]
-
 ...
 
 target 'SampleApp' do
     ...
-	pod 'ComplyCubeMobileSDK'
+	pod 'ComplyCube'
     ...
 end
 
@@ -82,10 +71,10 @@ curl -X POST https://api.complycube.com/v1/clients \
      -H 'Content-Type: application/json' \
      -d '{
           	"type": "person",
-            "email": "sam.smith@example.com",
+            "email": "jane.doe@example.com",
             "personDetails":{
-                "firstName": "sam",
-                "lastName" :"smith",
+                "firstName": "Jane",
+                "lastName" :"Doe",
                 "dob": "1990-01-01"
 		    }
         }'
@@ -99,7 +88,7 @@ curl -X POST https://api.complycube.com/v1/tokens \
      -H 'Content-Type: application/json' \
      -d '{
           	"clientId":"CLIENT_ID",
-          	"referrer": "https://www.example.com/*"
+          	"appId": "com.complycube.SampleApp"
         }'
 ```
 ### 3. Prepare the SDK's stages
@@ -118,13 +107,31 @@ Start the SDK using the flow builder, passing in the stages you want to include,
 
 ```swift
 let sdk = ComplyCubeMobileSDK.FlowBuilder()
-            .withSDKToken("userTokenGoesHere")
-            .withClientId("userIDGoesHere")
-            .withStages([documentStage, selfieStage])
+            .withSDKToken("SDK_TOKEN")
+            .withStages([documentStage, selfieStage]) // The order here is how the client will see the screens
             .start(fromVc: self)
 ```
-## Handling Callbacks
-To handle callacks your view controller must implement the onError, onCancelled and onSuccess functions of the ComplyCubeMobileSDKDelegate. 
+
+## 5. Execute checks against your client
+Using the results returned in the onSuccess callback, you can trigger your backend to run the necessary checks on your client. 
+
+*For example, use the result of a selfie and document capture as follows;*
+* result.documentId to run a document check
+* result.documentId and result.livePhotoId to run an identity check
+
+```curl
+curl -X POST https://api.complycube.com/v1/checks \
+     -H 'Authorization: <YOUR_API_KEY>' \
+     -H 'Content-Type: application/json' \
+     -d '{
+            "clientId":"CLIENT_ID",
+            "type": "document_check",
+            "documentId":"DOCUMENT_ID"
+        }'
+```
+
+## Handling results
+To handle result callbacks your view controller must implement the onError, onCancelled and onSuccess functions of the ComplyCubeMobileSDKDelegate. 
 
 ``` swift
 extension ViewController: ComplyCubeMobileSDKDelegate {
@@ -136,11 +143,15 @@ extension ViewController: ComplyCubeMobileSDKDelegate {
         print("The user has cancelled the flow or not accepted terms")
     }
     
-    func onSuccess() {
+    func onSuccess(_ result: ComplyCubeResult) {
         print("The flow has completed here are the ID's returned")
     }
 }
 ```
+
+Typically you onSucess method will make [check requests](https://docs.complycube.com/api-reference/checks/create-a-check) to validates the customers captured data. The ID's of the uploaded data is returned in the ```result``` parameter
+
+For example a default flow (Identity Document, Selfie and Proof of Address) would have a result parameter with ```result.documentId, result.livePhotoId, result.proofOfAddressId```
 
 ## Customising Flow
 
@@ -159,7 +170,7 @@ If you choose to include this stage, it will always appear first regardless of w
 
 ### User Consent Stage
 
-You can include this screen to collect the users consent for the verificaiton process, with links to ComplyCube's privacy policy and terms of services.
+You can optionally include the consent stage to enforce explicit consent collection and present links to ComplyCube's privacy policy and terms of services. The client must accept before they can progress in the flow. The consent screen allows you to set a custom title as follows.
 
 ``` swift
     let consentStage = UserConsentStageBuilder()
@@ -168,9 +179,21 @@ You can include this screen to collect the users consent for the verificaiton pr
 ```
 ### Document Stage
 
+The document stage allows a user to select the type of identity document they would like to submit.
+You can customise these screens to help your customers make only valid choices.
+* Limit the document types the customer can select e.g. Passports only.
+* Set the document issuing countries they can be selected for each document type. 
+* Add/remove automated capture using smart assistance.
+* Show/hide the instruction screens before capture.
+* Set a retry limit, to allow customers to progress the journey regardless of capture quality.
+
 The document stage is mandatory, and can be configured for different document types and countries. These combinations must match the [supported combinations](https://docs.complycube.com/documentation/checks/document-check/document-types-per-country) or an error will be thrown.
 
-Each document type has a countries property to limit the list of countries that are accepted. 
+**_NOTE:_** If you provide only one document type, the document type selection screen will be skipped. If you provide only a single country for a given document type the country selection screen will be skipped.
+
+By enabling/disabling guidance you can remove the information screen shown before camera capture. This should only be ommitted if you have clearly informed your customer of the capture steps required.
+
+:warning: Please note the retryLimit you set here will take precedence over the retry limit that has been set globally in the [developer console](https://portal.complycube.com/automations/documentChecks).
 
 ``` swift
     let docStage = DocumentStageBuilder()
@@ -180,5 +203,86 @@ Each document type has a countries property to limit the list of countries that 
             .build()
 ```
 
+##### Selfie Photo & Video Stage customisation
+You can request a selfie photo capture or selfie video capture from your customer. 
 
-### Happy coding !
+``` swift
+let selfieStage = BiometricStageBuilder()
+                    .setType(type: .photo) // Setup Photo selfie
+                    .build()
+// or
+let selfieVideo = BiometricStageBuilder()
+                    .setType(type: .video) // Setup Video selfie
+                    .build()
+```
+
+:warning: If you attempt to add both the SDK will throw a ComplyCubeError error stating Mulitple biometric stages found.
+
+##### Proof of Address customisation
+When requesting a proof of address you can set the allowed document type but also set if the user is allowed to upload from their device.
+
+```swift
+let poaStage = AddressStageBuilder()
+                .useLiveCaptureOnly(enable: false)
+```
+### Customising appearence
+
+The SDK also allows colour customisations to match your existing application. You can customise the SDK colours by setting colour values when building your flow. 
+
+```swift
+let colorScheme = ComplyCubeColourScheme()
+colorScheme.primaryButtonBgColor = .green
+```
+
+| Appearence property | Description |
+| --- | ----------- |
+| ```primaryButtonBgColor``` | Primary action button background colour |
+| ```primaryButtonPressedBgColor``` | Primary action button pressed background colour |
+| ```primaryButtonTextColor``` | Primary action button text colour |
+| ```primaryButtonBorderColor``` | Primary action button border colour |
+| ```secondaryButtonBgColor``` | Secondary button background colour |
+| ```secondaryButtonPressedBgColor``` | Primary action button pressed background colour |
+| ```secondaryButtonTextColor``` | Secondary action button text colour |
+| ```secondaryButtonBorderColor``` | Secondary action button border colour |
+| ```documentTypeBgColor``` | Document type selection button colour |
+| ```documentTypeBorderColor``` | Document type selection button border colour|
+| ```documentTypeTextColor``` | Document type title text colour|
+| ```headerTitle``` | Title heading text colour |
+| ```subheaderTitle``` | Subheading text colour e.g. |
+
+### Error handling
+
+If the SDK experiences any issues that cannot be recovered from within the flow. A ComplyCubeError is returned with one of the following error codes.
+
+| Error Code | Description |
+| --- | ----------- |
+| ```.noToken``` | Attempted to launch the SDK without setting the Token |
+| ```.expiredToken``` | The token used to mount the SDK has expired please repeat the token request process and restart the flow. |
+| ```.notAuthorised``` | The SDK has attempted a request to an endpoint you are not authorised to use, please check with your account manager.|
+| ```.biometricStagesCount``` | Multiple biometric stages found in config |
+| ```.proofOfAddressStagesCount``` | Multiple proof of address stages found in config |
+| ```.userConsentsCount``` | Multiple user consent stages found in config |
+| ```.jailbroken``` | User device has been flagged as jailbroken |
+| ```.uploadsRequireGuidance``` | If useLiveCaptureOnly is false guidance must be enabled |
+| ```.noDocumentTypes``` | A stage using documents has been configured without setting the allowed types |
+| ```.unknown``` | Something unexpected has happened, let us know how this happened. |
+
+### Localisation
+
+The SDK provides the following language support
+
+* English - en :uk:
+* French - fr :fr:
+* German - de :de:
+* Italian - it :it:
+* Spanish - es :es:
+
+### Going Live
+
+ComplyCube uses webhooks to notify your application when an event happens in your account. Before you go live ensure you have setup the necessary webhooks to process your check results. [Check out the Webhooks guide here for more information.](https://docs.complycube.com/documentation/guides/webhooks)
+
+Check out our handy [integration checklist here](https://docs.complycube.com/documentation/guides/integration-checklist) before you go-live.
+
+### Additional Info
+
+You can find our full [API reference here](https://docs.complycube.com/api-reference) and our guides and example flows can be found [here](https://docs.complycube.com/documentation/).
