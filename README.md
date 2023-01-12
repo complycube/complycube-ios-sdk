@@ -117,14 +117,14 @@ Our SDK uses the device camera and microphone for capture. You must add the foll
 
 * `NSCameraUsageDescription`
 
-```json
+```xml
 <key>NSCameraUsageDescription</key>
 <string>Used to capture facials biometrics and documents</string>
 ```
 
 * `NSMicrophoneUsageDescription`
 
-```json
+```xml
 <key>NSMicrophoneUsageDescription</key>
 <string>Used to capture video biometrics</string>
 ```
