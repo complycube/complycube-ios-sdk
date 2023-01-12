@@ -63,8 +63,8 @@ The ComplyCube iOS SDK makes it quick and easy to build a frictionless customer 
 ## Requirements
 
 * Swift 5
-* iOS 11+
-* Xcode 13+
+* iOS 11 and above
+* Xcode 13 and above
 
 ## Getting started
 
