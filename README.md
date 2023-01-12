@@ -11,7 +11,7 @@ The ComplyCube iOS SDK makes it quick and easy to build a frictionless customer 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
-  * [Installation](#installation)
+  * [Installing the SDK](#installing-the-sdk)
     + [CocoaPods](#cocoapods)
     + [Application permissions](#application-permissions)
   * [2. Creating a client](#2-creating-a-client)
@@ -79,7 +79,7 @@ Mobile SDK integration flow
 </p>
 
 
-### Installation
+### Installing the SDK
 
 #### CocoaPods
 
