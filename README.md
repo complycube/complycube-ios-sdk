@@ -299,10 +299,10 @@ This is the first screen of the flow. It displays a welcome message and a summar
 
 
 ``` swift
-    let welcomeStage = WelcomeStageBuilder()
-     .setTitle(title: "My Company Verification")
-     .setMessage(message: "We will now verify your identity so you can start trading.")
-     .build()
+let welcomeStage = WelcomeStageBuilder()
+  .setTitle(title: "My Company Verification")
+  .setMessage(message: "We will now verify your identity so you can start trading.")
+  .build()
 ```
 
 > The welcome stage will always default to show as the first screen. 
@@ -312,9 +312,9 @@ This is the first screen of the flow. It displays a welcome message and a summar
 You can optionally add this stage to enforce explicit consent collection before the client can progress in the flow. The consent screen allows you to set a custom title.
 
 ``` swift
-    let consentStage = UserConsentStageBuilder()
-     .setTitle(title: "Terms of Service")
-     .build()
+let consentStage = UserConsentStageBuilder()
+  .setTitle(title: "Terms of Service")
+  .build()
 ```
 
 ##### Document stage
@@ -334,11 +334,13 @@ You can remove the information screens shown before camera captures by enabling 
 > :warning: Please note the `retryLimit` you set here will take precedence over the retry limit that has been set globally in the [developer console](https://portal.complycube.com/automations).
 
 ``` swift
-    let docStage = DocumentStageBuilder()
-     .setAllowedDocumentTypes(types: [ .passport,
-                                       .drivingLicence(countries: ["GB","US"]), 
-                                       .nationalIdentityCard()])
-     .build()
+let docStage = DocumentStageBuilder()
+  .setAllowedDocumentTypes(types: [
+    .passport,
+    .drivingLicence(countries: ["GB", "US"]),
+    .nationalIdentityCard(),
+  ])
+  .build()
 ```
 
 If you want to set the countries across all document types (apart from passports), you can set the top-level country lists at the flow level.
@@ -353,15 +355,15 @@ You can request a selfie photo ([live photo](https://docs.complycube.com/api-ref
 
 ``` swift
 let selfieStage = BiometricStageBuilder()
-                    .setType(type: .photo)
-                    .build()
+  .setType(type: .photo)
+  .build()
 ```
 or
 
 ``` swift
 let videoStage = BiometricStageBuilder()
-                    .setType(type: .video)
-                    .build()
+  .setType(type: .video)
+  .build()
 ```
 
 > :warning: If you attempt to add both, the SDK will throw a `ComplyCubeError` error stating multiple conflicting stages.
@@ -372,7 +374,7 @@ When requesting a proof of address document, you can set the allowed document ty
 
 ```swift
 let poaStage = AddressStageBuilder()
-                .useLiveCaptureOnly(enable: false)
+  .useLiveCaptureOnly(enable: false)
 ```
 
 ### Appearance
@@ -416,17 +418,17 @@ To handle result callbacks, your view controller must implement the `onError`, `
 
 ``` swift
 extension ViewController: ComplyCubeMobileSDKDelegate {
-    func onError(_ error: ComplyCubeError) {
-        print("An error has occurred")
-    }
-    
-    func onCancelled(_ error: ComplyCubeError) {
-        print("The user has cancelled the flow or not accepted the terms")
-    }
-    
-    func onSuccess(_ result: ComplyCubeResult) {
-        print("The flow has completed - here are the ID's returned")
-    }
+  func onError(_ error: ComplyCubeError) {
+    print("An error has occurred")
+  }
+
+  func onCancelled(_ error: ComplyCubeError) {
+    print("The user has cancelled the flow or not accepted the terms")
+  }
+
+  func onSuccess(_ result: ComplyCubeResult) {
+    print("The flow has completed - here are the ID's returned")
+  }
 }
 ```
 
