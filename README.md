@@ -11,7 +11,7 @@ The ComplyCube iOS SDK makes it quick and easy to build a frictionless customer 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Getting started](#getting-started)
-  * [Installing the SDK](#installing-the-sdk)
+  * [1. Installing the SDK](#installing-the-sdk)
     + [CocoaPods](#cocoapods)
     + [Application permissions](#application-permissions)
   * [2. Creating a client](#2-creating-a-client)
@@ -79,7 +79,7 @@ Mobile SDK integration flow
 </p>
 
 
-### Installing the SDK
+### 1. Installing the SDK
 
 #### CocoaPods
 
@@ -268,7 +268,7 @@ Using the results returned in the `onSuccess` callback, you can trigger your **m
 
 #### Example request
 
-```curl
+```bash
 curl -X POST https://api.complycube.com/v1/checks \
      -H 'Authorization: <YOUR_API_KEY>' \
      -H 'Content-Type: application/json' \
