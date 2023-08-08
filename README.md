@@ -92,7 +92,7 @@ gem install cocoapods-art
 2. To add the library, copy your repository credentials into a `.netrc` file to your home directory and setup the repository:
 
 ```bash
-pod repo-art add cc-cocoapods-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-local"
+pod repo-art add cc-cocoapods-release-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-release-local"
 ```
 
 3. Add plugin repos and install the pod using your `Podfile`.
@@ -101,11 +101,15 @@ pod repo-art add cc-cocoapods-local "https://complycuberepo.jfrog.io/artifactory
 plugin 'cocoapods-art', :sources => [
   'cc-cocoapods-release-local'
 ]
+source 'https://cdn.cocoapods.org/' 
 ...
 
 target 'YourApp' do
     ...
-	pod 'ComplyCube'
+    use_frameworks!
+    use_modular_headers!
+    ...
+	pod 'ComplyCubeMobileSDK'
     ...
 end
 
