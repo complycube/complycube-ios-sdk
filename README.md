@@ -234,14 +234,14 @@ The sequence of stages you specify in `.withStages()` determines the order in wh
 
 Using the results returned in the `onSuccess` callback, you can trigger your **mobile backend** to run the necessary checks on your client.
 
-*For example, use the result of a selfie and document capture as follows;*
+For example, use the result of a selfie and document capture as follows:
 
 - `result.documentId` to run a [Document Check](https://docs.complycube.com/api-reference/check-types/document-check)
 - `result.documentId` and `result.livePhotoId` to run an [Identity Check](https://docs.complycube.com/api-reference/check-types/identity-check)
 
 #### Example request
 
-```curl
+```bash
 curl -X POST https://api.complycube.com/v1/checks \
      -H 'Authorization: <YOUR_API_KEY>' \
      -H 'Content-Type: application/json' \
@@ -318,7 +318,7 @@ You can remove the information screens shown before camera captures by enabling 
 You can request a selfie photo ([live photo](https://docs.complycube.com/api-reference/live-photos)) capture or video ([live video](https://docs.complycube.com/api-reference/live-videos)) capture from your client.
 
 ``` swift
-let selfieStage = BiometricStageBuilder()
+let selfieStage = BiometricStageBuilder()'
                     .setType(type: .photo)
                     .build()
 ```
@@ -476,7 +476,7 @@ Below is the list of events being tracked by the SDK:
 | ```DOCUMENT_STAGE_DOCUMENT_TYPE``` | The client has reached the document type selection screen for an ID Document capture stage. |
 | ```DOCUMENT_STAGE_SELECT_COUNTRY``` | The client reached country selection screen for ID document. |
 | ```DOCUMENT_STAGE_CAPTURE_GUIDANCE``` | The client reached capture guidance screen for ID document. |
-| ```INTRO``` | The client has reached the intro screen|
+| ```INTRO``` | The client has reached the intro screen. |
 | ```PROOF_OF_ADDRESS_STAGE_TWO_SIDE_CHECK_QUALITY_FRONT``` | The client reached quality preview screen for the front side of a two-sided proof of address document. |
 | ```PROOF_OF_ADDRESS_STAGE_CAPTURE_GUIDANCE``` | The client has reach capture guidance screen for proof of address document. |
 | ```PROOF_OF_ADDRESS_STAGE_TWO_SIDE_CHECK_QUALITY_BACK``` | The client reached quality preview screen for the back side of a two-sided proof of address document. |
