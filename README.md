@@ -101,7 +101,9 @@ Mobile SDK integration flow
    ```bash
    pod repo-art add cc-cocoapods-release-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-release-local"
    ```
-
+   Remember to fetch your credentials from Jfrog using the Set Me Up button [here](https://complycuberepo.jfrog.io/ui/repos/tree/General/cc-cocoapods-release-local) 
+   
+   
 3. Add plugin repos and install the pod using your `Podfile`.
 
    ```ruby
