@@ -107,17 +107,23 @@ Mobile SDK integration flow
 3. Add plugin repos and install the pod using your `Podfile`.
 
    ```ruby
-   plugin 'cocoapods-art', :sources => [
-     'cc-cocoapods-release-local',
-     'trunk'
-   ]
-   ...
+    plugin 'cocoapods-art', :sources => [
+      'cc-cocoapods-release-local'
+    ]
 
-   target 'YourApp' do
-       ...
-       pod 'ComplyCube'
-       ...
-   end
+    ...
+
+    platform :ios, '13.0' # Or above
+
+    target 'YourApp' do
+
+      use_frameworks!
+      use_modular_headers!
+
+      ...
+      pod 'ComplyCubeMobileSDK'
+      ...
+    end
    ```
 
 #### Application permissions
