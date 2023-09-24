@@ -316,7 +316,7 @@ You can remove the information screens shown before camera captures by enabling 
 ``` swift
     let docStage = DocumentStageBuilder()
      .setAllowedDocumentTypes(types: [ .passport,
-                                       .drivingLicence(countries: ["GB","US"]), 
+                                       .drivingLicence(["GB","US"]), 
                                        .nationalIdentityCard()])
      .build()
 ```
@@ -326,7 +326,7 @@ You can remove the information screens shown before camera captures by enabling 
 You can request a selfie photo ([live photo](https://docs.complycube.com/api-reference/live-photos)) capture or video ([live video](https://docs.complycube.com/api-reference/live-videos)) capture from your client.
 
 ``` swift
-let selfieStage = BiometricStageBuilder()'
+let selfieStage = BiometricStageBuilder()
                     .setType(type: .photo)
                     .build()
 ```
