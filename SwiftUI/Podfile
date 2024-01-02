@@ -4,20 +4,21 @@ plugin 'cocoapods-art', :sources => [
   'trunk'
 ]
 
-platform :ios, '11.5'
+platform :ios, '13'
 
-target 'ComplyCube sample App' do
-  # Comment the next line if you don't want to use dynamic frameworks
+target 'SampleApp' do
+use_modular_headers!
   use_frameworks!
 
   # Pods for ComplyCube sample App
   pod 'ComplyCube'
-  target 'ComplyCube sample AppTests' do
+  
+  target 'SampleAppAppTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'ComplyCube sample AppUITests' do
+  target 'SampleAppUITests' do
     # Pods for testing
   end
 

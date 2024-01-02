@@ -35,11 +35,15 @@ struct ContentView: View {
                     let colorScheme = ComplyCubeColourScheme()
                     colorScheme.primaryButtonBgColor = .green
                     colorScheme.headerTitle = .red
-                    let sdk = ComplyCube.FlowBuilder()
-                        .withSDKToken("SDK_TOKEN")
-                        .withStages([documentStage, selfieStage])
-                        .withColorScheme(colorScheme)
-                        .start(fromVc: viewController!)
+                    do {
+                        try ComplyCubeMobileSDK.FlowBuilder()
+                            .withSDKToken("SDK_TOKEN")
+                            .withStages([documentStage, selfieStage])
+                            .withColorScheme(colorScheme)
+                            .start(fromVc: viewController!)
+                    } catch {
+                        print(error)
+                    }
                     
                 }.padding()
                     .buttonStyle(.borderedProminent)

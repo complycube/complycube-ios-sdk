@@ -1,6 +1,6 @@
 # ComplyCube iOS SDK
 
-The ComplyCube iOS SDK makes it quick and easy to build a frictionless customer onboarding and biometric re-authentication experience in your iOS app. We provide powerful, smart, and customizable UI screens that can be used out-of-the-box to capture the data you need for identity verification.
+The ComplyCube iOS SDK makes it quick and easy to build a frictionless customer onboarding and biometric re-authentication experience in your iOS app. We provide powerful, smart, and customizable UI screens that can be used out-of-the-box to capture the data you need for identity verification. This SDK supports both UIKit and SwiftUI, giving developers flexibility in choosing the UI framework that best fits their needs.
 
 > :information_source: Please get in touch with your **Account Manager** or **[support](https://support.complycube.com/hc/en-gb/requests/new)** to get access to our Mobile SDK.
 
@@ -118,10 +118,12 @@ Our SDK uses the device camera and microphone for capture. You must add the foll
 
 Follow our step-by-step guide on integrating the SDK [here](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide)
 
-## Going live
+#### Running the Project
 
-Check out our handy [integration checklist here](https://docs.complycube.com/documentation/guides/integration-checklist) before you go live.
+To run the ComplyCube iOS SDK project, follow these steps:
 
-## Additional info
+1. After download the project and following the installation of the SDK you open the project in Xcode selecting either the UIKit or SwiftUI project.
 
-You can find our full [API reference here](https://docs.complycube.com/api-reference), and our guides and example flows can be found [here](https://docs.complycube.com/documentation/).
+2. Build and run the project using the standard Xcode build and run buttons.
+
+3. Ensure that you have the required dependencies installed using CocoaPods as mentioned in the Installation section. Additionally, make sure to replace the placeholder API key in the example projects with your actual ComplyCube API key.

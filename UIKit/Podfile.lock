@@ -1,0 +1,92 @@
+PODS:
+  - Alamofire (5.6.1)
+  - Analytics (4.1.8)
+  - ComplyCubeMobileSDK (0.0.17):
+    - Alamofire (= 5.6.1)
+    - Analytics (~> 4.1)
+    - JGProgressHUD (= 2.1)
+    - JWTDecode (~> 2.6.3)
+    - Sentry (= 8.17.1)
+    - SwiftyJSON (= 4.0)
+  - JGProgressHUD (2.1)
+  - JWTDecode (2.6.3)
+  - Sentry (8.17.1):
+    - Sentry/Core (= 8.17.1)
+    - SentryPrivate (= 8.17.1)
+  - Sentry/Core (8.17.1):
+    - SentryPrivate (= 8.17.1)
+  - SentryPrivate (8.17.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire`, tag `5.6.1`)
+  - Analytics (from `https://github.com/segmentio/analytics-ios`)
+  - ComplyCubeMobileSDK (= 0.0.17)
+  - JGProgressHUD (from `https://github.com/JonasGessner/JGProgressHUD`, tag `2.1.0`)
+  - JWTDecode (from `https://github.com/auth0/JWTDecode.iOS.git`, tag `2.6.3`)
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `8.17.1`)
+  - SentryPrivate (from `https://github.com/getsentry/sentry-cocoa.git`, tag `8.17.1`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON`, tag `4.0.0`)
+
+SPEC REPOS:
+  https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-release-local:
+    - ComplyCubeMobileSDK
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire
+    :tag: 5.6.1
+  Analytics:
+    :git: https://github.com/segmentio/analytics-ios
+  JGProgressHUD:
+    :git: https://github.com/JonasGessner/JGProgressHUD
+    :tag: 2.1.0
+  JWTDecode:
+    :git: https://github.com/auth0/JWTDecode.iOS.git
+    :tag: 2.6.3
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 8.17.1
+  SentryPrivate:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 8.17.1
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON
+    :tag: 4.0.0
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire
+    :tag: 5.6.1
+  Analytics:
+    :commit: 23be21248a147a551f0cd7bfb24a6b2df13b1d90
+    :git: https://github.com/segmentio/analytics-ios
+  JGProgressHUD:
+    :git: https://github.com/JonasGessner/JGProgressHUD
+    :tag: 2.1.0
+  JWTDecode:
+    :git: https://github.com/auth0/JWTDecode.iOS.git
+    :tag: 2.6.3
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 8.17.1
+  SentryPrivate:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 8.17.1
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON
+    :tag: 4.0.0
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Analytics: 9655e0e1c71ea98107cfcb2b14891168acc6c6c9
+  ComplyCubeMobileSDK: 23ba5ebe077fc4b82920341647e818e77ea33fd0
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Sentry: d9f99f9cc13777c5d938650c1e1c85047bb4f0d1
+  SentryPrivate: 839b1e58addf58624087a80b2628e543193fa8ef
+  SwiftyJSON: 8cd73b154950360d79292a8dc8c0d0a85d258930
+
+PODFILE CHECKSUM: bd747b3106087a4226a199fe1cea7282c683dc7e
+
+COCOAPODS: 1.14.3
