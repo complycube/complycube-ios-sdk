@@ -3,8 +3,28 @@ plugin 'cocoapods-art', :sources => [
   'trunk'
 ]
 
+platform :ios, '13'
+
 target 'SampleApp' do
 	use_modular_headers!
-	pod 'Sentry'
-	pod 'ComplyCube'
+  use_frameworks!
+  pod 'ComplyCubeMobileSDK', '0.0.17'
+  pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.17.1'
+  pod 'SentryPrivate', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.17.1'
+  pod 'JWTDecode', :git => 'https://github.com/auth0/JWTDecode.iOS.git', :tag => '2.6.3', :modular_headers => true
+  pod 'Analytics', :git => 'https://github.com/segmentio/analytics-ios'
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire', :tag => '5.6.1' , :modular_headers => true
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON', :tag => '4.0.0'
+  pod 'JGProgressHUD', :git => 'https://github.com/JonasGessner/JGProgressHUD', :tag => '2.1.0', :modular_headers => true
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target |
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13'
+    end
+  end
 end
