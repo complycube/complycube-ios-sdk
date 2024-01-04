@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         colorScheme.headerTitle = .red
         let sdk = ComplyCubeMobileSDK.FlowBuilder()
             .withSDKToken("SDK_TOKEN")
+            .withClientId("CLIENT_ID")
             .withStages([documentStage, selfieStage])
             .withColorScheme(colorScheme)
             .start(fromVc: self)

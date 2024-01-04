@@ -38,6 +38,7 @@ struct ContentView: View {
                     do {
                         try ComplyCubeMobileSDK.FlowBuilder()
                             .withSDKToken("SDK_TOKEN")
+                            .withClientId("CLIENT_ID")
                             .withStages([documentStage, selfieStage])
                             .withColorScheme(colorScheme)
                             .start(fromVc: viewController!)
