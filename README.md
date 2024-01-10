@@ -26,13 +26,17 @@ Remember to fetch your credentials from Jfrog using the **Set Me Up** button [he
 
 1. In your terminal, navigate to `complycube-ios-sdk/UIKit/` and run `pod install`.
 2. Open `complycube-ios-sdk/UIKit/SampleApp.xcworkspace` in Xcode.
-3. [Generate an SDK token](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide#id-3.-generate-an-sdk-token), and replace `SDK_TOKEN` in `complycube-ios-sdk/UIKit/SampleApp/ViewController.swift` with the generated token.
+3. [Create a Client ID](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide#id-2.-create-a-client).
+4. [Generate an SDK token](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide#id-3.-generate-an-sdk-token).
+5. In the `complycube-ios-sdk/UIKit/SampleApp/ViewController.swift` file, replace `CLIENT_ID` and `SDK_TOKEN` with the generated values from the previous steps.
 
 ### Using SwiftUI
 
 1. In your terminal, navigate to `complycube-ios-sdk/SwiftUI/` and run `pod install`.
 2. Open `complycube-ios-sdk/SwiftUI/SampleApp.xcworkspace` in Xcode.
-3. [Generate an SDK token](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide#id-3.-generate-an-sdk-token), and replace `SDK_TOKEN` in `complycube-ios-sdk/SwiftUI/SampleApp/ContentView.swift` with the generated token.
+3. [Create a Client ID](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide#id-2.-create-a-client).
+4. [Generate an SDK token](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide#id-3.-generate-an-sdk-token).
+5. In the `complycube-ios-sdk/SwiftUI/SampleApp/ContentView.swift` file, replace `CLIENT_ID` and `SDK_TOKEN` with the generated values from the previous steps.
 
 ## Integrating our SDK
 
