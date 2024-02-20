@@ -42,4 +42,10 @@ Remember to fetch your credentials from Jfrog using the **Set Me Up** button [he
 
 For detailed instructions on integrating our SDK, please refer to our [integration guide](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide).
 
-For an overview of our core platform and its multiple features, please refer to our [user guide](https://doc.complycube.com) or browse the [API reference](https://docs.complycube.com/api-reference) for fine-grained documentation of all our services.
+For an overview of our core platform and its multiple features, please refer to our [user guide](https://docs.complycube.com) or browse the [API reference](https://docs.complycube.com/api-reference) for fine-grained documentation of all our services.
+
+
+## About ComplyCube
+
+[ComplyCube](https://www.complycube.com/en), an award-winning SaaS & API platform, offers innovative Identity Verification (IDV), Anti-Money Laundering (AML), and Know Your Customer (KYC) compliance solutions. Its extensive customer base spans several industries, such as financial services, transport, healthcare, e-commerce, cryptocurrency, FinTech, and telecoms, making ComplyCube a leading figure in the IDV space.
+This ISO-certified platform is notable for its quick omnichannel integration and a wide range of services. It provides Low/No-Code solutions, robust API, Mobile SDKs, Client Libraries, and smooth CRM integrations.
