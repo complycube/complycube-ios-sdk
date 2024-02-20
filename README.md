@@ -20,7 +20,7 @@ This repository provides a pre-built UI that uses the ComplyCube SDK. It guides 
    pod repo-art add cc-cocoapods-release-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-release-local"
    ```
 
-Remember to fetch your credentials from Jfrog using the **Set Me Up** button [here](https://complycuberepo.jfrog.io/ui/repos/tree/General/cc-cocoapods-release-local).
+> :information_source: Remember to fetch your credentials from Jfrog using the **Set Me Up** button [here](https://complycuberepo.jfrog.io/ui/repos/tree/General/cc-cocoapods-release-local).
 
 ### Using UIKit
 
@@ -48,4 +48,6 @@ For an overview of our core platform and its multiple features, please refer to 
 ## About ComplyCube
 
 [ComplyCube](https://www.complycube.com/en), an award-winning SaaS & API platform, offers innovative Identity Verification (IDV), Anti-Money Laundering (AML), and Know Your Customer (KYC) compliance solutions. Its extensive customer base spans several industries, such as financial services, transport, healthcare, e-commerce, cryptocurrency, FinTech, and telecoms, making ComplyCube a leading figure in the IDV space.
+<br>
+<br>
 This ISO-certified platform is notable for its quick omnichannel integration and a wide range of services. It provides Low/No-Code solutions, robust API, Mobile SDKs, Client Libraries, and smooth CRM integrations.
