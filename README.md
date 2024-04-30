@@ -8,20 +8,23 @@ This repository provides a pre-built UI that uses the ComplyCube SDK. It guides 
 
 ### Install CocoaPods
 
-1. Before using the ComplyCube SDK, install the Cocoapods Artifactory plugin by running the following command in your terminal:
+1. Before using the ComplyCube SDK, install Cocoapods by running the following command in your terminal:
 
    ```bash
-   gem install cocoapods-art
+   sudo gem install cocoapods
    ```
 
-2. To add the library, copy your repository credentials into a `.netrc` file to your home directory and setup the repository:
+2. Specify the SDK in your `Podfile`:
 
    ```bash
-   pod repo-art add cc-cocoapods-release-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-release-local"
+   pod 'ComplyCubeMobileSDK'
    ```
 
+<<<<<<< Updated upstream
 > :information_source: Remember to fetch your credentials from Jfrog using the **Set Me Up** button [here](https://complycuberepo.jfrog.io/ui/repos/tree/General/cc-cocoapods-release-local).
 
+=======
+>>>>>>> Stashed changes
 ### Using UIKit
 
 1. In your terminal, navigate to `complycube-ios-sdk/UIKit/` and run `pod install`.
