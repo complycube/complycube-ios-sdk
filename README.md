@@ -2,26 +2,24 @@
 
 This repository provides a pre-built UI that uses the ComplyCube SDK. It guides you through the ComplyCube identity verification process, which includes collecting client ID documents, proof of address documents, and biometric selfies.
 
-> :information_source: Please get in touch with your **Account Manager** or **[support](https://support.complycube.com/hc/en-gb/requests/new)** to get access to our Mobile SDK.
+> :information_source: Please get in touch with your **Account Manager** or **[support](https://support.complycube.com/hc/en-gb/requests/new)** to get access to our NFC-Enabled Mobile SDK.
 
 ## To run the app
 
 ### Install CocoaPods
 
-1. Before using the ComplyCube SDK, install the Cocoapods Artifactory plugin by running the following command in your terminal:
+1. Before using the ComplyCube SDK, install Cocoapods by running the following command in your terminal:
 
    ```bash
-   gem install cocoapods-art
+   sudo gem install cocoapods
    ```
 
-2. To add the library, copy your repository credentials into a `.netrc` file to your home directory and setup the repository:
+2. Specify the SDK in your `Podfile`:
 
    ```bash
-   pod repo-art add cc-cocoapods-release-local "https://complycuberepo.jfrog.io/artifactory/api/pods/cc-cocoapods-release-local"
+   pod 'ComplyCubeMobileSDK'
    ```
-
-> :information_source: Remember to fetch your credentials from Jfrog using the **Set Me Up** button [here](https://complycuberepo.jfrog.io/ui/repos/tree/General/cc-cocoapods-release-local).
-
+   
 ### Using UIKit
 
 1. In your terminal, navigate to `complycube-ios-sdk/UIKit/` and run `pod install`.
