@@ -19,12 +19,7 @@ This repository provides a pre-built UI that uses the ComplyCube SDK. It guides 
    ```bash
    pod 'ComplyCubeMobileSDK'
    ```
-
-<<<<<<< Updated upstream
-> :information_source: Remember to fetch your credentials from Jfrog using the **Set Me Up** button [here](https://complycuberepo.jfrog.io/ui/repos/tree/General/cc-cocoapods-release-local).
-
-=======
->>>>>>> Stashed changes
+   
 ### Using UIKit
 
 1. In your terminal, navigate to `complycube-ios-sdk/UIKit/` and run `pod install`.
