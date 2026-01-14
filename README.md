@@ -38,7 +38,7 @@ This repository provides a pre-built UI that uses the ComplyCube SDK. It guides 
 
 ## Integrating our SDK
 
-For detailed instructions on integrating our SDK, please refer to our [integration guide](https://docs.complycube.com/documentation/guides/mobile-sdk-guide/mobile-sdk-integration-guide).
+For detailed instructions on integrating our SDK, please refer to our [integration guide](https://docs.complycube.com/sdks/mobile-integrations/ios-sdk).
 
 For an overview of our core platform and its multiple features, please refer to our [user guide](https://docs.complycube.com) or browse the [API reference](https://docs.complycube.com/api-reference) for fine-grained documentation of all our services.
 
