@@ -123,6 +123,7 @@ Run this checklist for both examples:
 Use test identities and documents approved by ComplyCube. Do not use real customer data in a development environment unless your organisation has explicitly approved it.
 
 ## Integration guidance
+For detailed instructions on integrating our SDK, please refer to our [integration guide](https://docs.complycube.com/sdks/mobile-integrations/ios-sdk).
 
 These examples deliberately use configurable SDK stages (the check-driven approach). For most production integrations, ComplyCube recommends the [workflow integration](https://docs.complycube.com/documentation/sdks/mobile-integrations/ios-sdk/workflow-integration), which keeps the verification journey centrally configured.
 
