@@ -103,7 +103,7 @@ If Xcode reports a missing `LottieLoopMode.loop` symbol, refresh the CocoaPods p
 5. Delete the existing SampleApp from the iPhone or iPad.
 6. Press Run in Xcode to install a fresh copy.
 
-Both example Podfiles enable library evolution for Lottie. This is required because ComplyCube Mobile SDK `2.1.0` is a precompiled framework and expects Lottie's public Swift symbols at runtime.
+Both example Podfiles enable library evolution for all pod targets. This is required because ComplyCube Mobile SDK `2.1.0` is a precompiled framework and expects public symbols from Swift dependencies such as Lottie and JWTDecode at runtime.
 
 ## Manual test checklist
 
