@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Used to capture viode biometrics</string>
+	<string>The microphone is used to capture video biometrics.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Used to capture facials biometrics and documents</string>
+	<string>The camera is used to capture identity documents and biometric video.</string>
 	<key>CFBundleIdentifier</key>
-	<string></string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
