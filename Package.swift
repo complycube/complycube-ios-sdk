@@ -3,14 +3,19 @@
 // (complycube/complycube-ios-sdk) by the release pipeline. Do not edit it there
 // by hand — edit scripts/spm-package/Package.swift.tmpl in the SDK source repo.
 //
-// 2.1.1 and cf862b0d82bafa96af95d50a3c362d51d20b7177f3c286bd7660591693fa470d are substituted at release time:
-//   2.1.1  → the release tag (e.g. 2.0.16)
-//   cf862b0d82bafa96af95d50a3c362d51d20b7177f3c286bd7660591693fa470d → swift package compute-checksum ComplyCubeMobileSDK-SPM.zip
+// 2.1.2 and c7b46289281a491ad540150e070016495bd83c65e0a363517518b999621e5e53 are substituted at release time:
+//   2.1.2  → the release tag (e.g. 2.0.16)
+//   c7b46289281a491ad540150e070016495bd83c65e0a363517518b999621e5e53 → swift package compute-checksum ComplyCubeMobileSDK-SPM.zip
 //
-// The ComplyCube SDK ships as a closed-source binary XCFramework. A .binaryTarget
-// cannot declare dependencies, so the SDK's runtime dependencies are carried by a
-// separate source target ("ComplyCubeMobileSDKDependencies") that is vended in the
-// same library product. Consumers only ever `import ComplyCubeMobileSDK`.
+// The ComplyCube SDK ships as a closed-source binary XCFramework, built as a STATIC
+// archive so this package's dependency graph supplies every dependency exactly once.
+// (As a dynamic framework the binary hard-linked @rpath/AppAuth.framework and friends,
+// which SwiftPM builds as object files, not frameworks — so every consumer app crashed
+// on launch with "Library not loaded".)
+//
+// A .binaryTarget can declare neither dependencies nor resources, so both are carried by
+// a separate source target ("ComplyCubeMobileSDKDependencies") vended in the same library
+// product. Consumers only ever `import ComplyCubeMobileSDK`.
 
 import PackageDescription
 
@@ -32,6 +37,10 @@ let package = Package(
         )
     ],
     dependencies: [
+        // IMPORTANT: every version here is EXACT, and must equal the pin in Podfile-spm
+        // in the SDK source repo — the version the binary XCFramework was compiled
+        // against. scripts/check-spm-dependency-alignment.py enforces the equality.
+        //
         // IMPORTANT: these version ranges must stay compatible with the versions the
         // binary XCFramework is COMPILED against — the pins in Podfile-spm in the SDK
         // source repo, which drive the SPM build. Each lower bound is the EXACT compiled-
@@ -39,7 +48,7 @@ let package = Package(
         // in particular ship as closed-source binaries with no cross-minor ABI guarantee);
         // the upper bounds cap the major version so resolution cannot drift onto an
         // ABI-incompatible release.
-        .package(url: "https://github.com/getsentry/sentry-cocoa", "8.49.0" ..< "9.0.0"),
+        .package(url: "https://github.com/getsentry/sentry-cocoa", "8.57.0" ..< "9.0.0"),
         .package(url: "https://github.com/googlemaps/ios-places-sdk", "8.5.0" ..< "9.0.0"),
         .package(url: "https://github.com/airbnb/lottie-ios", "4.6.1" ..< "5.0.0"),
         .package(url: "https://github.com/auth0/JWTDecode.swift", "3.3.0" ..< "4.0.0"),
@@ -50,12 +59,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ComplyCubeMobileSDK",
-            url: "https://github.com/complycube/complycube-ios-sdk/releases/download/2.1.1/ComplyCubeMobileSDK-SPM.zip",
-            checksum: "cf862b0d82bafa96af95d50a3c362d51d20b7177f3c286bd7660591693fa470d"
+            url: "https://github.com/complycube/complycube-ios-sdk/releases/download/2.1.2/ComplyCubeMobileSDK-SPM.zip",
+            checksum: "c7b46289281a491ad540150e070016495bd83c65e0a363517518b999621e5e53"
         ),
-        // Force-links the SDK's runtime dependencies into any app that links the product.
-        // The binary target references these modules; this target guarantees SPM resolves
-        // and links them so the binary's external symbols are satisfied.
+        // Carries what the binary target cannot declare for itself.
+        //
+        // 1. Dependencies. The static archive leaves every dependency symbol undefined;
+        //    these declarations are what resolve them at the consumer's link step.
+        // 2. Resources. A static framework has no bundle at runtime — Xcode does not copy
+        //    its resources into the app, and `Bundle(for:)` returns `Bundle.main` — so the
+        //    SDK's compiled assets and string tables travel as a .bundle copied in here.
+        //    `Bundle.baseBundle()` inside the SDK locates it. This is the same shape
+        //    GooglePlaces uses for its own static xcframework.
         .target(
             name: "ComplyCubeMobileSDKDependencies",
             dependencies: [
@@ -67,7 +82,12 @@ let package = Package(
                 .product(name: "Segment", package: "analytics-ios"),
                 .product(name: "AppAuth", package: "AppAuth-iOS")
             ],
-            path: "Sources/ComplyCubeMobileSDKDependencies"
+            path: "Sources/ComplyCubeMobileSDKDependencies",
+            resources: [
+                // .copy, not .process: the bundle is already compiled (Assets.car and
+                // *.lproj tables) and must be preserved verbatim.
+                .copy("Resources/ComplyCubeMobileSDK.bundle")
+            ]
         )
     ]
 )
