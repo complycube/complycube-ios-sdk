@@ -3,9 +3,9 @@
 // (complycube/complycube-ios-sdk) by the release pipeline. Do not edit it there
 // by hand — edit scripts/spm-package/Package.swift.tmpl in the SDK source repo.
 //
-// 2.1.3 and a7bfecd22f3d87f65c55aec16a5c179bcd92236386c9571f3e0309d00d9fc1b3 are substituted at release time:
-//   2.1.3  → the release tag (e.g. 2.0.16)
-//   a7bfecd22f3d87f65c55aec16a5c179bcd92236386c9571f3e0309d00d9fc1b3 → swift package compute-checksum ComplyCubeMobileSDK-SPM.zip
+// 2.1.4 and 5bf7919a46277f124c0366dca8bdc01c926155e522db45229a354317dd7e3ded are substituted at release time:
+//   2.1.4  → the release tag (e.g. 2.0.16)
+//   5bf7919a46277f124c0366dca8bdc01c926155e522db45229a354317dd7e3ded → swift package compute-checksum ComplyCubeMobileSDK-SPM.zip
 //
 // The ComplyCube SDK ships as a closed-source binary XCFramework, built as a STATIC
 // archive so this package's dependency graph supplies every dependency exactly once.
@@ -59,8 +59,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ComplyCubeMobileSDK",
-            url: "https://github.com/complycube/complycube-ios-sdk/releases/download/2.1.3/ComplyCubeMobileSDK-SPM.zip",
-            checksum: "a7bfecd22f3d87f65c55aec16a5c179bcd92236386c9571f3e0309d00d9fc1b3"
+            url: "https://github.com/complycube/complycube-ios-sdk/releases/download/2.1.4/ComplyCubeMobileSDK-SPM.zip",
+            checksum: "5bf7919a46277f124c0366dca8bdc01c926155e522db45229a354317dd7e3ded"
         ),
         // Carries what the binary target cannot declare for itself.
         //
