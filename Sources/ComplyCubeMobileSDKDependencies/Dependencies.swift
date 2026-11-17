@@ -11,7 +11,6 @@ import FingerprintPro
 import GooglePlaces
 import JWTDecode
 import Lottie
-import Segment
 import Sentry
 
 public enum ComplyCubeMobileSDKDependencies {
@@ -37,7 +36,7 @@ public enum ComplyCubeMobileSDKDependencies {
     ///
     /// Only statically-vended dependencies need an entry. Today that is Sentry, whose
     /// SwiftPM `Sentry` product is the Sentry-Static xcframework. The rest are dynamic
-    /// frameworks (FingerprintPro), plain object files (AppAuth, Segment, Lottie,
+    /// frameworks (FingerprintPro), plain object files (AppAuth, Lottie,
     /// JWTDecode), or already force-linked by their own package's shim target
     /// (GooglePlaces). Add a line here if one of them ever changes shape — the symptom
     /// is an undefined-symbol error naming that dependency.
